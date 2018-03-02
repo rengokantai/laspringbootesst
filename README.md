@@ -187,6 +187,16 @@ override run method
 ```
 @Override
 public void run(String... string) throws Exception {
-  
+  String url = "http";
+  Room[] roomArray = this.restTemplate.getForObject(url,Room[].class);
+  List<Room> rooms = Arrays.asList(roomArray);
 }
 ```
+
+### Spring Boot Data
+Datasources
+- When property configured, you will get a Datasource object
+- Can only have one database auto configured
+- The DataSource can be injected if needed
+- Spring Boot will configure repositories for Spring Data
+
