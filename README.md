@@ -108,3 +108,54 @@ server:
     key-alias: ke
     key-password: pass
 ```
+```
+http --verify=no https://localhost:8080/api/greeting
+```
+
+
+### Spring Boot WebApps
+```
+<tr th:each="room: ${rooms}">
+  <td th:text="${room.number}"></td>
+  <td th:text="${room.name}"></td>
+</tr>
+```
+
+create a site.css at
+```
+/resources/static/css/site.css
+```
+in html
+```
+<link th:href="@{/css/site.css}" rel="stylesheet"/>
+```
+
+
+### Spring Boot Web Services
+
+###### 03:20
+Autowired should use in constructor
+```
+@Autowired
+public RoomController(RoomService roomService){
+  super();
+  this.roomService = roomService;
+}
+```
+
+###### 05:46
+xml format
+```
+http http"// Accept:application/xml
+```
+
+add jackson
+```
+<dependency>
+  <groupId>com.fasterxml.jaskcon.dataformat</groupId>
+  <aritfactId>jackson-dataformat-xml</artifactId>
+</dependency>
+```
+
+
+### Spring Boot Devtools
