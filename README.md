@@ -159,3 +159,34 @@ add jackson
 
 
 ### Spring Boot Devtools
+add
+```
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <aritfactId>spring-boot-devtools</artifactId>
+</dependency>
+```
+preference-> compiler->build project automaticcally
+
+### Packaging a Spring Boot Application
+
+### Running a Spring Boot Application
+
+### Implementing CommandLineRunner
+```
+<dependency>
+  <groupId>org.springframework</groupId>
+  <aritfactId>spring-web</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.fasterxml.jackson.core</groupId>
+  <aritfactId>jackson-core</artifactId>
+</dependency>
+```
+override run method
+```
+@Override
+public void run(String... string) throws Exception {
+  
+}
+```
